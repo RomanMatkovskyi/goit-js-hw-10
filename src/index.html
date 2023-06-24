@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <div class="backdrop">
       <div class="apiform">
         <form id="api">
-          <input type="text" class="api-input" placeholder="Please enter your API - key">
-          <button type="submit" class="submit-btn">submit</button>
+          <label class="form-name">Please enter your API key</label>
+          <input type="text" class="api-input">
+          <button type="submit" class="submit-btn">VERIFY</button>
         </form>
         <p class="loader-form"></p>
       </div>
     </div>
     <div class="container">
-    <select class="breed-select"></select>
+    <h1 class="main-title">Select cat you would like to get info about!</h1>
+    <select class="breed-select" id="single">loading</select>
     <p class="load"></p>
     <p class="error">Oops! Something went wrong! Try reloading the page!</p>
     <div class="cat-info">
