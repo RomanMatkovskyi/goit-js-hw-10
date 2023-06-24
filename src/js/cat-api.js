@@ -1,3 +1,5 @@
+import Notiflix from 'notiflix';
+
 let apiKey;
 const selectEl = document.querySelector('.breed-select');
 const errorEl = document.querySelector('.error');
@@ -38,10 +40,10 @@ loaderFormEl.classList.toggle('visually-hidden');
         backDropEl.classList.toggle('visually-hidden')
       } else {
       loaderFormEl.classList.add('visually-hidden');
-        window.alert('Upppsss, your key is wrong :(')
+      Notiflix.Notify.failure('Upppsss, your key is wrong :(')
       }
     })
-    .catch(error => window.alert('Please enter valid key'))
+    .catch(error => Notiflix.Notify.failure('Please enter valid key'))
 }
 
 
