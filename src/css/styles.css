@@ -39,34 +39,6 @@ line-height: 1;
 }
 
 /* Loaders */
-.loader-form {
-  left: 40%;
-  top: 63%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: orangered;
-  box-shadow: 32px 0 orangered, -32px 0 orangered;
-  position: absolute;
-  animation: flash 0.5s ease-out infinite alternate;
-}
-
-@keyframes flash {
-  0% {
-    background-color: #FFF2;
-    box-shadow: 32px 0 #FFF2, -32px 0 orangered;
-  }
-  50% {
-    background-color: orangered;
-    box-shadow: 32px 0 #FFF2, -32px 0 #FFF2;
-  }
-  100% {
-    background-color: #FFF2;
-    box-shadow: 32px 0 orangered, -32px 0 #FFF2;
-  }
-}
-
-
 .loader {
     color: orangered;
     font-size: 45px;
@@ -120,62 +92,6 @@ line-height: 1;
   }
    
   /* ------------------------------------------ */
-
-  /* ---------------API-Form---------------- */
-  .backdrop {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-    .apiform {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1);
-      padding: 24px;
-      width: 100%;
-      max-width: 310px;
-      min-height: 72px;
-      background-color: #f7faa6;
-      border-radius: 4px;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .form-name {
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    .submit-btn {
-      margin-left: 15px;
-      font-weight: 600;
-      background-color: #fff;
-      border-radius: 25px;
-      border-color:  #eda10a;
-    }
-
-    .api-input {
-      margin-top: 5px;
-      border-radius: 5px;
-    }
-
-    .api-input:focus {
-      border-color: transparent;
-      outline: 2px solid #eda10a;
-    
-    }
-  
-
-
-
-
 
 .cat-info {
     display: flex;
